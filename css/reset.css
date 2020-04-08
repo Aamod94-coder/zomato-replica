@@ -156,7 +156,7 @@ body {
   padding-left: 20px;
 }
 
-.party .search-del {
+.party #search-del {
   position: relative;
   width: 80%;
   padding: 10px;
