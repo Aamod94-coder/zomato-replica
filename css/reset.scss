@@ -1,129 +1,380 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+body{
+  margin:0px;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+
+.h-container
+{
+  
+  position: relative;
+  height: 80px;
+  
+  .navbar
+  {
+    display: flex;
+    flex-direction: row;
+  }
+   .getapp
+   {
+     display: flex;
+     flex-direction: row;
+     margin-left: 20px;
+     padding-top: 20px;
+    .appic
+    {
+      img{
+        width: 40px;
+      }
+    }
+    .getapptext{
+        
+        margin-top: 10px;
+    }
+  }
+  .navi
+  {
+    
+     position: absolute;
+     right: 0px;
+     height: 80px;
+     padding-right: 30px;
+     
+  .navlist
+  {
+    list-style-type: none;
+    text-decoration: none;
+    
+  ul{
+    display:flex;
+  }
+  li {
+    display: flex;
+   align-items: center;
+   display: inline-block;
+
+  };
+  img{
+        width: 40px;
+     }
+      
+   }
+  }
+
 }
-body {
-  line-height: 1;
+
+.mainbanner
+{
+  position: relative;
+  img
+  {
+    width: 100%;
+    height: 600px;
+  }
+  .login
+  {
+    
+   color: white;
+   position: absolute;
+   top:20px;
+   right: 200px;
+   padding: 8px;
+   height: 10px;
+   
+  }
+  .account
+  {
+  
+    
+   color: white;
+   position: absolute;
+   top:20px;
+   right: 30px;
+   border-radius: 3px;
+   border:1px solid white;
+   padding:10px;
+   height: 15px;
+   
+   }
+.iban{
+  
+  img{
+
+  
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top:20%;
+  right:45%;
+   }
 }
-ol,
-ul {
-  list-style: none;
+.para
+{
+  position: absolute;
+  top:47%;
+  left:25%;
+  color: white;
+  font-size: larger;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-blockquote,
-q {
-  quotes: none;
+.search-restaurant
+{
+  position: absolute;
+  top:70%;
+  left:20%;
+  #City
+  {
+    width: 200px;
+    height: 35px;
+  }
+  #search-rest
+  {
+    width: 800px;
+    height: 30px;
+
+  }
+  #search-btn
+  {
+    width:100px ;
+    height: 40px;
+    background-color: red;
+    color: white;
+  }
+
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.party
+{
+  background-color: white;
+  width: 35%;
+  height: 320px;
+  
+  border: 5px solid grey;
+  .del
+  {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: large;
+  }
+.searchbox
+{
+  padding-top: 2px;
+    padding-left: 20px;
+}
+  .search-del
+  {
+    position: relative;
+    width: 80%;
+    padding:10px;
+    
+  }
+  .detect-btn
+  {
+    position: absolute;
+    left: 26%;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  
+  }
+  .but
+  {
+    padding-top: 15px;
+    padding-left: 20px;
+
+    .order-btn
+    {
+      width: 85%;
+      background-color: green;
+      color: white;
+      padding: 10px;
+    }
+  }
+.tc{
+  color:green;
+  padding:30px;
+  font-size: large;
+}
+}
+
+.colls
+{
+  position: relative;
+  
+}
+.collection
+{
+  position: absolute;
+  right:150px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  top:0px;
+  width: 800px;
+  height: 300px;
+  border: solid grey 2px;
+  h3{
+    color:grey;
+  }
+}
+
+
+.set{
+  
+  position: relative;
+  
+  height: 100px;
+  width: 300px;
+
+  .trend
+  {
+    position: absolute;
+    right:15px;
+    top:5px;
+
+  }
+
+  
+  .setpic
+
+  {
+    img{
+      height: 100px;
+      
+    }
+  
+
+}
+}
+
+.category-list
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+.para{
+  padding-left: 40px;
+  padding-top: 10px;
+
+  h3{
+    color:gray;
+  }
+}
+
+.categories
+{
+  background-color:lightgrey;
+  height: 310px;
+}
+
+.locality-list
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.intro
+{
+  padding-left: 25px;
+  padding-top: 5px;
+  
+  
+  p{
+  font-size: large;
+  color: grey;
+  
+  }
+}
+
+.localities
+{
+  background-color: lightgrey;
+  height: 230px;
+}
+
+.actual
+{
+  background-color: lightblue;
+  
+}
+
+.whole
+{
+  background-color: darkslategray;
+  height: 300px;
+  
+  
+}
+.citation{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  
+}
+.know
+{
+  
+  padding-top: 50px;
+  padding-right: 50px;
+  #City
+  {
+    width: 200px;
+    height: 35px;
+    color: white;
+    background-color: black;
+  }
+}
+.more
+{
+  img{
+    width: 100px;
+    height: 100px;
+    padding:20px;
+  }
+}
+
+.feet
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  color:white;
+  font-size: large;
+  
+
+  
+}
+
+.about
+{
+  list-style-type: none;
+  font-size: medium; 
+}
+
+.food
+{
+  list-style-type: none;
+  font-size: medium; 
+}
+
+.rest
+{
+  list-style-type: none;
+  font-size: medium; 
+}
+
+.count
+{
+  list-style-type: none;
+  font-size: medium; 
+  padding-right: 20px;
 }
